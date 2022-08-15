@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+canvas{
+    background-color: white;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    margin: 0 auto;
+}
+
+#canvas{
+    z-index: 1;
+}
+#trace{
+    z-index: 2;
+    background-color: transparent;
+}
+
+#control-bar{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 480px;
+    position:absolute;
+}
+
+h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button{
+    margin-left: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>DVD ScreenSaver</title>
+</head>
+
+<body>
+    
+    <h2>DVD Screensaver Blueprint</h2>
+    <canvas id="trace"></canvas>
+    <canvas id="canvas">
+    </canvas>
+    <div id="control-bar">
+
+        <label for="size">Choose a screen size:</label>
+        <select name="screensize" id="size" onchange="resize()">
+            <option value="21-9">21:9</option>
+            <option value="16-9">16:9</option>
+            <option value="12-9">4:3</option>
+            <option value="9-9">1:1</option>
+        </select>
+
+        <button onclick="hitit()">start</button>
+        <button id="clear" onclick="clr()">clear</button>
+    </div>
+
+</body>
+
+</html>
